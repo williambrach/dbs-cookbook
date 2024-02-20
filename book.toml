@@ -1,0 +1,6 @@
+[book]
+authors = ["williambrach"]
+language = "en"
+multilingual = false
+src = "src"
+title = "williambrach-dbs-cookbook"
