@@ -1,6 +1,36 @@
 # Cviko 2
 
 
+### SQL processing order
+
+1. **FROM** clause: This is the starting point of query processing where the DBMS identifies the tables mentioned in the FROM clause. If there are multiple tables, this step involves preparing for joins but doesn't execute them yet. It's about setting up the context for the rest of the query.
+
+2. **JOIN** operations: If the query involves JOINs, they are processed after the DBMS has identified the tables involved. The DBMS combines rows from two or more tables based on a related column between them. JOINs are executed based on the conditions specified in the ON clause.
+
+3. **WHERE** clause: After JOIN operations, the WHERE clause is applied to the result set. The WHERE clause filters the rows returned by the FROM and JOIN clauses, removing rows that do not satisfy the WHERE condition. This step significantly reduces the size of the data that subsequent steps need to process, making it one of the most critical for query performance.
+
+4. **GROUP BY** clause: If present, the GROUP BY clause groups rows that have the same values in specified columns into summary rows, like "find the total salary of employees grouped by department." It's applied after WHERE filtering but before any aggregate functions (like SUM or COUNT) are calculated.
+
+5. **HAVING** clause: This clause is similar to WHERE but is used to filter groups created by the GROUP BY clause. It's applied after GROUP BY operations.
+
+6. **SELECT** clause: The columns to be returned are processed at this point. If there are any aggregate functions (e.g., SUM, COUNT), they are computed on the groups of data formed by the GROUP BY clause.
+
+7. **DISTINCT** clause: If specified, duplicates are removed from the result set after the SELECT operations.
+
+8. **ORDER BY** clause: This is applied last to the result set before it is returned. The ORDER BY clause sorts the rows based on specified columns. This step is done after all the filtering, joining, and grouping operations have been completed.
+
+9. **LIMIT / OFFSET** clause: If present, LIMIT and OFFSET are applied last to limit the number of rows returned, which is particularly useful for pagination.
+
+### Joins
+
+* **INNER JOIN**: Returns rows when there is at least one match in both tables. If there is no match, the rows are not returned.
+* **LEFT JOIN** (or LEFT OUTER JOIN): Returns all rows from the left table, and the matched rows from the right table. The result is NULL from the right side if there is no match.
+* **RIGHT JOIN** (or RIGHT OUTER JOIN): Returns all rows from the right table, and the matched rows from the left table. The result is NULL from the left side if there is no match.
+* **FULL JOIN** (or FULL OUTER JOIN): Returns rows when there is a match in one of the tables. This means it returns all rows from both tables, with NULLs in place where there is no match.
+* **CROSS JOIN**: Returns a Cartesian product of the two tables, i.e., it joins every row of the first table with every row of the second table.
+
+![joins](./assets/joins.png)
+
 ### Load data into db
 
 Using SQL run all the commands from the file cvicenie2-hockey.sql
