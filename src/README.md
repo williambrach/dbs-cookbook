@@ -11,6 +11,11 @@ Ak si náhodou toto repo objavil, tak ta varujem, je to len na vlastné riziko. 
     - [Setup example](./cviko_1/setup.md)
 
 - [Cvičenie-2](./cviko_2/text.md)
+- [Cvičenie-3](./cviko_3/text.md)
+
+### Zadania
+
+- [Zadanie-2](./zadanie_2/text.md)
 
 #### docs tutorial
 
