@@ -1,7 +1,6 @@
-# Zadanie 2
+# Zadanie 3
 
-* pokračovanie zadania 1
-* import "Stack Exchange Data Dump Superuser" datasetu do vašej lokálnej databázy
+* pokračovanie zadania 2 na datach z  "Stack Exchange Data Dump Superuser"
 * vytvorenie nových http endpointov podľa zadania
 * http -> sql -> json
 * **IBA SQL, ŽIADNE ORM** 
@@ -9,6 +8,8 @@
 * **PROTOKOL** (pdf alebo markdown)
     * SQL dopyty s ich opisom
     * príklady volania HTTP endpointov (pre každý endpoint)
+* Vo výstupe môžu nastať drobné nezrovnalosti (‘Z‘ / ‘+00:00‘ alebo nepresnosti na  úrovni ms)
+* Pri riešení je zakázané používať klúčové slovo WITH (úloha bude vyhodnotená za 0 bodov).
 
 ### Bodovanie
 
@@ -17,12 +18,10 @@
 
 ### HTTP endpointy
 
-#### [GET] /v1/posts/:post id/users
+#### [GET] /v3/users/:user id/badge history
 
-#### [GET] /v1/users/:user id/friends
+#### [GET] /v3/tags/:tag/comments?count=:count
 
-#### [GET] /v1/tags/:tagname/posts-load
+#### [GET] /v3/tags/:tagname/comments/:position?limit=:limit
 
-#### [GET] /v1/tags/:tagname/posts-load
-
-#### [GET] /v1/posts/?duration=:duration in minutes&limit=:limit
+#### [GET] /v3/posts/:postid?limit=:limit

@@ -19,4 +19,5 @@
 
 # Zadania
 
-- [Zadanie-2](./zadanie_2/text.md)
+- [Zadanie 2](./zadanie_2/text.md)
+- [Zadanie 3](./zadanie_3/text.md)

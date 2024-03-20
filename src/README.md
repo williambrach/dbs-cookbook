@@ -7,18 +7,16 @@ Ak si náhodou toto repo objavil, tak ta varujem, je to len na vlastné riziko. 
 
 ### Cvičenia
 
-- [Cvičenie-1](./cviko_1/text.md)
+- [Cvičenie 1](./cviko_1/text.md)
     - [Setup example](./cviko_1/setup.md)
-
-- [Cvičenie-2](./cviko_2/text.md)
-- [Cvičenie-3](./cviko_3/text.md)
-- [Cvičenie-4](./cviko_4/text.md)
-- [Cvičenie-5](./cviko_5/text.md)
-- [Cvičenie-6](./cviko_6/text.md)
-
+- [Cvičenie 2](./cviko_2/text.md)
+- [Cvičenie 3](./cviko_3/text.md)
+- [Cvičenie 4](./cviko_4/text.md)
+- [Cvičenie 5](./cviko_5/text.md)
+- [Cvičenie 6](./cviko_6/text.md)
 ### Zadania
-
-- [Zadanie-2](./zadanie_2/text.md)
+- [Zadanie 2](./zadanie_2/text.md)
+- [Zadanie 3](./zadanie_3/text.md)
 
 #### docs tutorial
 
