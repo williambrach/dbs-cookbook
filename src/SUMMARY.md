@@ -12,6 +12,8 @@
 - [Cviko 2](./cviko_2/text.md)
 - [Cviko 3](./cviko_3/text.md)
 - [Cviko 4](./cviko_4/text.md)
+- [Cviko 5](./cviko_5/text.md)
+- [Cviko 6](./cviko_6/text.md)
 
 -----------
 

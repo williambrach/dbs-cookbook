@@ -13,6 +13,8 @@ Ak si náhodou toto repo objavil, tak ta varujem, je to len na vlastné riziko. 
 - [Cvičenie-2](./cviko_2/text.md)
 - [Cvičenie-3](./cviko_3/text.md)
 - [Cvičenie-4](./cviko_4/text.md)
+- [Cvičenie-5](./cviko_5/text.md)
+- [Cvičenie-6](./cviko_6/text.md)
 
 ### Zadania
 
